@@ -8,6 +8,12 @@ func main() {
 	for i, batch := range batches {
 		fmt.Printf("Batch %d: %v with length %d and capacity %d\n", i+1, batch, len(batch), cap(batch))
 	}
+
+	s1 := []int{1, 2, 3}
+	s2 := append(s1, 4)
+	s3 := append(s2, 5)
+	s2[0] = 99
+	fmt.Println(s1, s2, s3)
 }
 
 func BatchSplit[T any](arr []T, size int) [][]T {
