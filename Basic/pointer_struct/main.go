@@ -9,4 +9,6 @@ func main() {
 
 	println("Account A Balance:", a.GetBalance())
 	println("Account B Balance:", b.GetBalance())
+
+	Test()
 }
