@@ -14,6 +14,11 @@ func main() {
 	s3 := append(s2, 5)
 	s2[0] = 99
 	fmt.Println(s1, s2, s3)
+
+	arr1 := [5]int{1, 2, 3, 4, 5}
+	s := arr1[1:3]
+	s[0] = 99
+	fmt.Println(arr1, s)
 }
 
 func BatchSplit[T any](arr []T, size int) [][]T {
